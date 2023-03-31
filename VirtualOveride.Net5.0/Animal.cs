@@ -23,5 +23,11 @@ namespace VirtualOveride.Net5._0
             //in our case all our animals are hungry by default
             IsHungry= true;
         }
+
+        //an empty virtual method MakeSound for other classes to Override
+        public virtual void MakeSound()
+        {
+
+        }
     }
 }
