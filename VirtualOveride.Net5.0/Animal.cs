@@ -29,5 +29,20 @@ namespace VirtualOveride.Net5._0
         {
 
         }
+
+        //a virtual method called Eat which sub classes can ovveride
+        public virtual void Eat()
+        {
+            //check is animal is hungry
+            if (IsHungry)
+            {
+                //if yes then print the name of the animal + "is eating"
+                Console.WriteLine($"{Name} is eating");
+            }
+            else
+            {
+                Console.WriteLine($"{Name} is not hungry");
+            }
+        }
     }
 }
