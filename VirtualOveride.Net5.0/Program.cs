@@ -6,7 +6,10 @@ namespace VirtualOveride.Net5._0
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Dog dog = new Dog("Sif", 15);
+            Console.WriteLine($"{dog.Name} is {dog.Age} years old");
+            dog.Play();
+            dog.Eat();
         }
     }
 }
