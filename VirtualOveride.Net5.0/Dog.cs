@@ -17,5 +17,12 @@ namespace VirtualOveride.Net5._0
             //all dogs are happy
             IsHappy = true;
         }
+
+        //simple override of the virtual method Eat
+        public override void Eat()
+        {
+            //to call the eat method from our base class as we use the keyword "base"
+            base.Eat();
+        }
     }
 }
