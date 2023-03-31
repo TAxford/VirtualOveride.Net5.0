@@ -24,5 +24,24 @@ namespace VirtualOveride.Net5._0
             //to call the eat method from our base class as we use the keyword "base"
             base.Eat();
         }
+
+        //override of the virtual method MakeSound
+        public override void MakeSound()
+        {
+            //since every animal will make a totally different sound
+            //each animal will implement their own version of MakeSound
+            Console.WriteLine("Wuuf!.");
+        }
+
+        //override of virtual method Play
+        public override void Play()
+        {
+            //check if the dog is happy if yes call the Play method from the base class
+            if(IsHappy) 
+            {
+                base.Play();
+            }
+         
+        }
     }
 }
