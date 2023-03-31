@@ -14,5 +14,14 @@ namespace VirtualOveride.Net5._0
         public int Age { get; set; }
         //is hungry boolean to check wether the animal is hungry
         public bool IsHungry { get; set; }
+
+        //simple constructor
+        public Animal(string name, int age)
+        {
+            Name = name; 
+            Age = age;
+            //in our case all our animals are hungry by default
+            IsHungry= true;
+        }
     }
 }
