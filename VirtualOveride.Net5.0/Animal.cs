@@ -44,5 +44,11 @@ namespace VirtualOveride.Net5._0
                 Console.WriteLine($"{Name} is not hungry");
             }
         }
+
+        //virtual method to Play
+        public virtual void Play()
+        {
+            Console.WriteLine($"{Name} is playing");
+        }
     }
 }
